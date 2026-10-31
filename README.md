@@ -31,5 +31,5 @@ This website serves as the official digital platform for Keamogetswe's Barbersho
 * **Live Deployment:** Deployed on GitHub Pages / Netlify.
 
 ---
-
+barbershop](https://github.com/Kkwinana3/Keamogetswe-s-Barber)
 
