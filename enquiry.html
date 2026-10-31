@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inquire about haircut prices, VIP grooming packages, and appointment availability at Keamogetswe's Barbershop.">
+    <meta name="keywords" content="Keamogetswe's Barbershop, haircut pricing, VIP grooming, barber booking, South Africa barbershop">
+    <meta name="author" content="Keamogetswe's Barbershop">
+    <title>Enquiry — Keamogetswe's Barbershop</title>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Service & Pricing Enquiry — Keamogetswe's Barbershop">
+    <meta property="og:description" content="Check availability and pricing for cuts, beard treatments, and VIP packages.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Keamogetswe's Barbershop</h1>
+        <p><em>Look Fresh, Clean and Feel Confident</em></p>
+        <nav>
+            <a href="index.html">Home</a> | | 
+            <a href="services.html">Services</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="enquiry.html">Enquiry</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Service & Availability Enquiry</h2>
+            <p>Use the form below to inquire about haircut availability, VIP grooming packages, or sponsorship inquiries.</p>
+            
+            <form id="enquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Keamogetswe kwinana" required>
+                    <span class="error-msg" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. Kkwinana3@gmail.com" required>
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 0678734405" required>
+                    <span class="error-msg" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceType">Inquiry Category:</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="standard-cut">Standard Haircut & Style</option>
+                        <option value="beard-treatment">Beard Conditioning & Trim</option>
+                        <option value="vip-package">VIP Deluxe Grooming Package</option>
+                        <option value="sponsor">Sponsorship / Event Partnership</option>
+                    </select>
+                    <span class="error-msg" id="serviceError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Appointment Date:</label>
+                    <input type="date" id="preferredDate" name="preferredDate" required>
+                    <span class="error-msg" id="dateError"></span>
+                </div>
+
+                <button type="submit" class="btn">Check Availability & Cost</button>
+            </form>
+
+            <!-- Dynamic AJAX Response Display -->
+            <div id="responseMessage" class="response-box" style="display:none; margin-top: 15px; padding: 12px; border-radius: 4px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Keamogetswe's Barbershop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="javascript_assets/script.js"></script>
+</body>
+</html>

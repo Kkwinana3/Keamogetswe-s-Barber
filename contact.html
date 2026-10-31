@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Keamogetswe's Barbershop for general feedback, queries, and support.">
+    <meta name="keywords" content="Keamogetswe's Barbershop, contact barber, location, customer support">
+    <meta name="author" content="Keamogetswe's Barbershop">
+    <title>Contact Us — Keamogetswe's Barbershop</title>
+
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Keamogetswe's Barbershop</h1>
+        <p><em>Look Fresh, Clean and Feel Confident</em></p>
+        <nav>
+            <a href="index.html">Home</a> |  
+            <a href="services.html">Services</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="enquiry.html">Enquiry</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Contact Our Team</h2>
+            <p>Send a message directly to our management team for support, general queries, or feedback.</p>
+
+            <form id="contactForm" action="mailto:info@keamogetswebarbershop.co.za" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="contactName">Your Name:</label>
+                    <input type="text" id="contactName" name="Name" placeholder="Your Name" required>
+                    <span class="error-msg" id="contactNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address:</label>
+                    <input type="email" id="contactEmail" name="Email" placeholder="name@example.com" required>
+                    <span class="error-msg" id="contactEmailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="messageType">Message Category:</label>
+                    <select id="messageType" name="Message Type">
+                        <option value="General Enquiry">General Query</option>
+                        <option value="Customer Feedback">Customer Feedback</option>
+                        <option value="Support">Technical / Booking Support</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="messageBody">Message:</label>
+                    <textarea id="messageBody" name="Message" rows="5" placeholder="Type your message here..." required></textarea>
+                    <span class="error-msg" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn">Send Email Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Keamogetswe's Barbershop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="javascript_assets/script.js"></script>
+</body>
+</html>
